@@ -1,14 +1,13 @@
-import turtle               # import everything from the turtle module
-canvas = turtle.Screen()    # get a canvas to draw on
-canvas.setup(400,200)       # set the canvas width and height
-poopyhead = turtle.Turtle() # create a new turtle named poopyhead
-poopyhead.shape("turtle")   # set poopyhead's shape
-poopyhead.color("purple")   # set poopyhead's color to purple
-poopyhead.forward(50)       # move poopyhead forward by 50 pixels
-poopyhead.left(90)          # move poopyhead forward by 100 pixels
-poopyhead.forward(50)       # move poopyhead forward by 100 pixels
-poopyhead.left(90)          # move poopyhead forward by 100 pixels
-poopyhead.forward(50)       # move poopyhead forward by 100 pixels
-poopyhead.left(90)          # move poopyhead forward by 100 pixels
-poopyhead.forward(50)       # move poopyhead forward by 100 pixels
-poopyhead.done()            # poopyhead is done
+import turtle
+p=((9.5, -1.8), (9.3, 6.9), (8.4, 3.3),
+   (5.6, 5.8), (2.1, 5.0), (2.5, 8.3),
+   (1.2, 8.5), (0.0, 6.3), (-2.1, 6.3),
+   (-2.5, 9.1), (-4.6, 9.5), (-8.1, 8.0),
+   (-6.7, 6.8), (-8.6, 6.0), (-1.2, 0.3),
+   (-5.2, 0.2), (-9.5, -3.1), (-8.8, -7.9),
+   (-3.8, -9.5), (-4.4, -4.3), (4.2, -5.8),
+   (9.5, -1.8))
+turtle.register_shape("squirrel", p)
+turtle.shape("squirrel")
+turtle.turtlesize(2,2)
+turtle.color("black","brown")

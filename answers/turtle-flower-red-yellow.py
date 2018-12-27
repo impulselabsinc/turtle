@@ -1,12 +1,13 @@
 #https://docs.python.org/3.2/library/turtle.html
-from turtle import *
-bart = Turtle()
-color("red", "yellow")
-begin_fill()
+import turtle
+bart = turtle.Turtle()
+bart.color("red", "yellow")
+bart.begin_fill()
 while True:
-    forward(200)
-    left(170)
-    if abs(pos()) < 1:
+    bart.forward(200)
+    bart.left(170)
+    if abs(bart.pos()) < 1:
         break
-end_fill()
-done()
+bart.end_fill()
+
+turtle.done()

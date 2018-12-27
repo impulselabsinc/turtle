@@ -2,8 +2,8 @@
 import turtle                       # import the turtle module
 
 # give the turtle superpowers
-turtle.hideturtle()                 # make the turtle invisible
-turtle.speed('fastest')             # make the turtle go superfast
+# turtle.hideturtle()                 # make the turtle invisible
+turtle.speed(6)             # make the turtle go superfast
 turtle.tracer(False)                # make the turtle's pen invisible
 
 # function to draw one petal
@@ -18,7 +18,7 @@ steps = 8                           # the length of each petal
 radius = 100                        # the width of each petal
 
 # draw the flower
-for i in xrange(num_petals):        # use a for-loop
+for i in range(num_petals):        # use a for-loop
     turtle.setheading(0)            # the direction the turtle is facing
     turtle.right(360*i/num_petals)  # turn the turtle before placing a leaf
     petal(radius,steps)             # call the petal function
